@@ -1,0 +1,28 @@
+{
+    "name": "woolf-assignment",
+    "version": "1.0.0",
+    "main": "server.ts",
+    "scripts": {
+        "start:dev": "nodemon --watch './**/*.ts' --exec ts-node server.ts"
+    },
+    "dependencies": {
+        "@trpc/server": "^10.38.0",
+        "axios": "^1.6.7",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "multer": "2.0.1",
+        "pdf-parse": "^1.1.1",
+        "rate-limiter-flexible": "7.1.1",
+        "zod": "^3.22.4"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.3",
+        "@types/multer": "^1.4.13",
+        "@types/pdf-parse": "^1.1.5",
+        "nodemon": "^3.1.10",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.4.0"
+    }
+}
