@@ -64,7 +64,7 @@ Authorization: Bearer secret123
 **Curl Example:**
 
 ```bash
-curl -X POST http://localhost:4000/analyze \
+curl -X POST http://localhost:4000/trpc/analyze \
   -H "Authorization: Bearer secret123" \
   -F "cv=@./cv.pdf" \
   -F "jobDescription=@./jd.pdf"
