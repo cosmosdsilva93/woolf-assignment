@@ -51,7 +51,7 @@ Server runs on `http://localhost:4000`
 
 ## 📤 API Usage
 
-### POST /analyze
+### POST /trpc/analyze
 
 Accepts two PDF files: `cv` and `jobDescription`
 
