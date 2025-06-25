@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import cors from 'cors';
 import multer from 'multer';
@@ -28,5 +31,5 @@ app.use(
   })
 );
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
