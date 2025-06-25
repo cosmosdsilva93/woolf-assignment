@@ -10,6 +10,7 @@ This project sets up a Node.js server using tRPC that accepts two PDF files — 
 - AI-powered structured analysis
 - Simple REST + tRPC endpoint
 - Token-based authentication with `.env`
+- Rate limiting to prevent abuse
 - Built for Developer Experience (DX)
 
 ---
@@ -83,6 +84,18 @@ curl -X POST http://localhost:4000/trpc/analyze \
 
 ---
 
+## 🔒 Rate Limiting
+
+To prevent abuse, the API includes per-token rate limiting logic.
+
+- Each client can only make a limited number of requests per minute.
+- Requests beyond this limit receive a `429 Too Many Requests` error.
+- Logic is customizable in `ratelimiter.ts`.
+
+---
+
+---
+
 ## 📦 Stack
 
 - **Node.js** + **Express**
@@ -91,6 +104,7 @@ curl -X POST http://localhost:4000/trpc/analyze \
 - **Multer** for file upload
 - **pdf-parse** for PDF extraction
 - **dotenv** for environment variables
+- **rate-limiter-flexible** middleware
 
 ---
 
